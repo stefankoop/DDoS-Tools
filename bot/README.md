@@ -12,10 +12,10 @@ All bots check the controlling file every second to see if new commands have bee
 ## Basic Usage
 
 * Modify controller_example.yaml to suit your needs, below are the allowed elements
-  ** hosts - an array of host IPs that should look at this entry for commands
-  ** command - a string that should be run for the given hosts
-  ** default_entry - Setting this to true tells the bot to use this entry as the default if the bot's IP is not found in any of the hosts array
-  ** kill_bot - Setting this to true will kill the bots associated with in the hosts element
-  ** run_once - Setting this to true tells the bot to only run a command once and then wait for more commands
+** hosts - an array of host IPs that should look at this entry for commands
+** command - a string that should be run for the given hosts
+** default_entry - Setting this to true tells the bot to use this entry as the default if the bot's IP is not found in any of the hosts array
+** kill_bot - Setting this to true will kill the bots associated with in the hosts element
+** run_once - Setting this to true tells the bot to only run a command once and then wait for more commands
 * Once the yaml file has been modified upload it to a web server that is accessible to all bots
 * Launch bots by using the following command `ruby bot <URL_OF_CONTROLLER_FILE>`
